@@ -4,6 +4,7 @@ import Form from "./form";
 const Page = () => {
   return (
     <>
+      <h1>개인정보 입력</h1>
       <Form></Form>
     </>
   );

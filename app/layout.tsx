@@ -11,6 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Nav></Nav>
         </header>
         <div id="root">
+          <div>Side</div>
           <ModalProvider>{children}</ModalProvider>
         </div>
       </body>
