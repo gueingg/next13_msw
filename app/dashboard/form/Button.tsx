@@ -31,9 +31,14 @@ const Button: FC<ButtonProp> = ({
   return (
     <ModalContext.Consumer>
       {({ isOpen, toggle }) => {
+
         return (
+          
           <div>
+            <>
+
             <Modal>{children}</Modal>
+            </>
           </div>
         );
       }}
