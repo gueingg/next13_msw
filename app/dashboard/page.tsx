@@ -1,13 +1,8 @@
 import React from "react";
-import Form from "./form";
+import Main from "../Components/dashboard/main";
 
 const Page = () => {
-  return (
-    <>
-      <h1>개인정보 입력</h1>
-      <Form></Form>
-    </>
-  );
+  return (<div><Main></Main></div>);
 };
 
 Page.displayName = "Home";

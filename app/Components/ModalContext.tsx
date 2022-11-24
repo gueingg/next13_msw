@@ -26,7 +26,6 @@ const ModalContext = createContext<Partial<ModalContextValue>>(defaultState);
 
 export function ModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => {
     setIsOpen((curr) => !curr);
   };

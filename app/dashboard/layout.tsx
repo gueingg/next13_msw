@@ -1,10 +1,8 @@
-import Form from "./form";
+import Body from "../Components/ui/body";
 
 const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-      {children}
-    </div>
+      <Body>{children}</Body>
   );
 };
 export default DashBoardLayout;

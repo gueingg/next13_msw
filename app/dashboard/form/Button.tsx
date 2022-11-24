@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, FC } from "react";
+import React, { FC } from "react";
 import { v4 } from "uuid";
-import ModalContext, {Modal} from "../../Components/ModalContext";
+import ModalContext, { Modal } from "../../Components/ModalContext";
 
 interface ButtonProp {
   id?: string | number;
@@ -31,14 +31,9 @@ const Button: FC<ButtonProp> = ({
   return (
     <ModalContext.Consumer>
       {({ isOpen, toggle }) => {
-
         return (
-          
           <div>
-            <>
-
             <Modal>{children}</Modal>
-            </>
           </div>
         );
       }}

@@ -1,20 +1,14 @@
 import { ReactNode } from "react";
-import { ModalProvider } from "./Components/ModalContext";
-import Nav from './nav';
-
+import "../styles/globals.css";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <head />
-      <body>
-        <header>
-            <Nav></Nav>
-        </header>
-        <div id="root">
-          <div>Side</div>
-          <ModalProvider>{children}</ModalProvider>
-        </div>
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <head />
+        <body>
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
